@@ -72,6 +72,7 @@ if st.button('Get Similar'):
                 st.image(poster_url)
                 st.markdown(f"**{title}**")
                 st.caption(f"{content_type}")
+                
             found_count +=1
     else:
         st.warning("Please select content first!")
