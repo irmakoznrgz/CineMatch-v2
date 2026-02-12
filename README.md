@@ -1,3 +1,5 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://io-cinematch.streamlit.app/)
+
 # 🎬 CineMatch v2: Smart Recommendation System
 
 CineMatch is a sophisticated content-based recommendation engine built with **Python** and **Streamlit**. It leverages **Machine Learning (Cosine Similarity)** to suggest personalized movies and TV series, enriched with real-time data from the **TMDB API**.
