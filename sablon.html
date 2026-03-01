@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+         src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js"
+        type="module"
+    ></script>
+</head>
+<body>
+
+    <div class="hero-alani">
+
+        <header class="ust-menu">
+            <div class="logo-alani" style="display: flex; align-items: center; gap: 15px;">
+                <dotlottie-wc 
+                    src="https://lottie.host/b541a2c4-e74b-424f-80fa-d0bcb71f320e/2Tt9WVwQgh.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 60px; height: 60px;"
+                    loop
+                    autoplay>
+                </dotlottie-wc>
+
+                <h1 style="margin: 0;">CineMatch</h1>
+            </div>
+
+            <nav>
+                <div class="arama-kutusu">
+                    <svg class="arama-ikonu" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    <input type="text" class="arama-input" placeholder="Film veya dizi ara...">
+
+                    <datalist id="film-tahminleri">
+                        [DATALIST_BURAYA]
+                    </datalist>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-icerik">
+            <h2>İzlediğin filmleri takip et. <br> Kendi sinema evrenini yarat.</h2>
+            <p>Sana en uygun filmleri saniyeler içinde bul.</p>
+            
+            <a href="#filmler-kismi" class="btn">Filmlere Göz At!</a>
+        </div>
+
+    </div>
+
+    <main class="film-listesi" id="filmler-kismi">
+        [FILMLER_BURAYA]
+    </main>
+
+    <script>
+        const aramaKutusu = document.querySelector('.arama-input');
+        
+        aramaKutusu.addEventListener('input', function() {
+            if (this.value.length > 0) {
+                this.setAttribute('list', 'film-tahminleri');
+            } else {
+                this.removeAttribute('list');
+            }
+        });
+    </script>
+    
+</body>
+</html>
