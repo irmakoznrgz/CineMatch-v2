@@ -1,5 +1,7 @@
 # CineMatch - HTML/CSS & Python Static Generator Version
 
+ **(https://irmakoznrgz.github.io/CineMatch-v2/)** 
+
 CineMatch projesinin bu dalı (branch), sıfır JavaScript kullanılarak, tamamen HTML, CSS ve Python arka uç (backend) gücüyle inşa edilmiştir. Python, TMDB API'den film verilerini çeker ve anında statik bir `index.html` dosyası üretir.
 
 ## Özellikler
